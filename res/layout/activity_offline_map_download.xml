@@ -1,0 +1,41 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+  <LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+    <Button android:id="@+id/offline_start"
+    	android:text="开始"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"  />
+	<Button android:text="停止" 
+		android:id="@+id/offline_stop" 
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"  />
+	<Button android:text="删除" 
+		android:id="@+id/offline_del" 
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"  />
+	<Button android:text="查看" 
+		android:id="@+id/offline_get" 
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"  />
+</LinearLayout>
+ 
+<LinearLayout 
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+	<TextView 
+		android:id="@+id/offline_text" 
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"  />
+</LinearLayout>
+
+ <com.baidu.mapapi.map.MapView android:id="@+id/offlinedownloadbmapView"
+	android:layout_width="fill_parent" android:layout_height="fill_parent" 
+	android:clickable="true"     
+/>
+</LinearLayout>

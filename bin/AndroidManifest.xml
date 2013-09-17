@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.beihangQA_test"
+    android:versionCode="11"
+    android:versionName="1.0.10" >
+
+    <uses-sdk android:minSdkVersion="7" >
+    </uses-sdk>
+
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.INTERNET" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.CALL_PHONE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.BAIDU_LOCATION_SERVICE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true" />
+
+    <application
+        android:name="com.example.beihangQA_test.DemoApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.beihangQA_test.LoginActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar" 
+             android:windowSoftInputMode="adjustResize|stateHidden"  >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.beihangQA_test.MyMapActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <category android:name="android.intent.category.EMBED" >
+                </category>
+
+                <action android:name="android.intent.action.MAIN" >
+                </action>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.beihangQA_test.NewsShowActivity"
+            android:label="@string/title_activity_news_show"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" >
+        </activity>
+        <activity
+            android:name="com.example.beihangQA_test.PublishNewsActivity"
+            android:label="@string/title_activity_publish_news"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" >
+        </activity>
+        <activity
+            android:name="com.example.beihangQA_test.OnlineUserActivity"
+            android:label="@string/title_activity_online_user"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <category android:name="android.intent.category.EMBED" >
+                </category>
+
+                <action android:name="android.intent.action.MAIN" >
+                </action>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.beihangQA_test.TakePhotoActivity"
+            android:label="@string/title_activity_take_photo"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.example.beihangQA_test.SettingActivity"
+            android:label="@string/title_activity_setting"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" >
+        </activity>
+        <activity
+            android:name="com.example.beihangQA_test.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/Transparent" >
+        </activity>
+        <activity
+            android:name="com.example.beihangQA_test.WelcomeActivity"
+            android:label="@string/title_activity_login"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.beihangQA_test.RegisterActivity"
+            android:label="@string/title_activity_register"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.beihangQA_test.HomePageActivity"
+            android:label="@string/title_activity_home_page"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.beihangQA_test.OfflineMapActivity"
+            android:label="@string/title_activity_offline_map_download"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.beihangQA_test.AQActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <category android:name="android.intent.category.EMBED" >
+                </category>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.beihangQA_test.AnswerActivity"
+            android:label="@string/title_activity_answer"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.beihangQA_test.QuestionActivity"
+            android:label="@string/title_activity_question"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.beihangQA_test.BigPhotoActivity"
+            android:label="@string/title_activity_big_photo" >
+        </activity>
+        <activity
+            android:name="com.example.beihangQA_test.ChatActivity"
+            android:label="@string/title_activity_chat"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <service
+            android:name="com.example.zb.xmpp.NotificationService"
+            android:enabled="true"
+            android:label="NotificationService" >
+            <intent-filter>
+                <action android:name="com.example.zb.xmpp.NotificationService" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" />
+
+        <activity
+            android:name="com.example.beihangQA_test.HomePageMyNewsListActivity"
+            android:label="@string/title_activity_home_page_my_news_list"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.beihangQA_test.HomePageMyCommentListActivity"
+            android:label="@string/title_activity_home_page_my_comment_list"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.beihangQA_test.NewsListActivity"
+            android:label="@string/title_activity_news_list"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.beihangQA_test.HomePageMyQAActivity"
+            android:label="@string/title_activity_home_page_my_qa"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.beihangQA_test.HomePageEditInfoActivity"
+            android:label="@string/title_activity_home_page_edit_info"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.beihangQA_test.HomePageMyAnswerActivity"
+            android:label="@string/title_activity_home_page_my_answer" >
+        </activity>
+
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" >
+        </service>
+
+        <activity
+            android:name="com.example.beihangQA_test.MySettingActivity"
+            android:label="@string/title_activity_my_setting" >
+        </activity>
+    </application>
+
+</manifest>

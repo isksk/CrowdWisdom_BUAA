@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<string-array name="entries_list_preference">
+    <item>20条</item>
+    <item>30条</item>
+    <item>40条</item>
+</string-array>
+<string-array name="entriesvalue_list_preference">
+    <item>20</item>
+    <item>30</item>
+    <item>40</item>
+</string-array>
+<string-array name="campus_list_preference">
+    <item>学院路校区</item>
+    <item>沙河校区</item>
+</string-array>
+<string-array name="campusvalue_list_preference">
+    <item>0</item>
+    <item>1</item>
+</string-array>
+</resources>

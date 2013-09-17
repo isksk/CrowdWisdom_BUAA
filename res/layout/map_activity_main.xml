@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+ 		xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MyMapActivity"
+        >
+        <RelativeLayout
+            android:id="@+id/map_header"
+		    android:layout_width="fill_parent" 
+		    android:layout_height="55dp"
+		    android:background="#0078d8"
+		    > 
+		    <TextView        
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:gravity="center"
+		        android:layout_centerVertical="true"
+		        android:text="新鲜事"
+		        android:textColor="#ffffff"
+		        android:textSize="25sp" 
+		        android:padding="5dp"/>	    
+    	</RelativeLayout>
+    	
+		<TextView 
+		    android:id="@+id/iter_view"
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"/>
+        <com.baidu.mapapi.map.MapView           
+            android:id="@+id/mymap_bmapsView"
+            android:layout_below="@+id/map_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true" />
+        
+        <LinearLayout
+	        android:id="@+id/mapWrapedLayout"        
+		    android:layout_height="wrap_content"
+		    android:layout_width="wrap_content"
+		    android:layout_alignParentBottom="true"
+	    	android:layout_alignParentLeft="true"
+		    android:orientation="horizontal"
+		    >
+		    
+		    <Button 
+		        android:id="@+id/map_wrap_button"
+		        android:layout_width="40dp"
+		        android:layout_height="40dp"
+		        android:layout_gravity="center_vertical"
+		        android:background="@drawable/wrap_button_release"
+		        android:layout_margin="10dp"		        
+	        />
+		    
+	        <LinearLayout
+	            android:id="@+id/bottom_panel"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:orientation="vertical" 
+	            android:visibility="invisible"        
+	            >
+	            <Button
+	                android:id="@+id/news_refresh"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_gravity="center_vertical"
+	                android:text="刷新"
+	                android:background="@drawable/button_bg"
+	                android:padding="10dp"
+	                />
+	            <Button
+	                android:id="@+id/news_publish"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_gravity="center_vertical"
+	                android:text="发布"
+	                android:background="@drawable/button_bg"
+	                android:padding="10dp"
+	                />
+	            <Button
+	                android:id="@+id/news_abstract"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_gravity="center_vertical"
+	                android:text="列表"
+	                android:background="@drawable/button_bg"
+	                android:padding="10dp"
+	                />
+	        </LinearLayout>		
+		</LinearLayout>
+         
+</RelativeLayout>

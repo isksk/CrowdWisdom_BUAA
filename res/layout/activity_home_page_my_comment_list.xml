@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+ <TextView
+        android:id="@+id/answerTitle_news_list"
+        android:layout_width="fill_parent"
+	    android:layout_height="55dp"
+	    android:background="#0078d8"
+        android:gravity="center"
+        android:text="我的评论"
+        android:textColor="#ffffff"
+        android:textSize="25sp" />
+    <ScrollView
+        android:id="@+id/vsv2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/answerTitle_news_list"
+  >
+
+        <LinearLayout
+            android:id="@+id/scrolllayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <ListView
+                android:id="@+id/homepagemycomment_mylist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </ListView>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

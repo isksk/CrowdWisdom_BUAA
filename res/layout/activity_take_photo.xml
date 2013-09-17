@@ -1,0 +1,35 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="#000000"   
+    tools:context=".Upload_takePicture" >
+    
+    
+ 	<LinearLayout
+ 	    android:id="@+id/takePicture_activity"
+ 	    android:layout_width="match_parent"
+ 	    android:layout_height="match_parent"
+ 	    android:orientation="horizontal" >
+
+ 		<SurfaceView
+ 		    android:id="@+id/takePicture_surfaceview"
+ 		    android:layout_width="960px"
+ 		    android:layout_height="match_parent" />
+
+ 	</LinearLayout>
+ 	
+ 	<Button
+        android:id="@+id/take_picture_Button"
+        android:layout_width="40sp"
+        android:layout_height="40sp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="15sp"
+        android:background="@drawable/use_start" />
+ 	
+ 	
+    
+ 	
+
+</RelativeLayout>

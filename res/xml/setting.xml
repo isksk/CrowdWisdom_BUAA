@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="基本设置">
+        <ListPreference
+        android:key="campus_ListPreference"
+        android:title="我所在的校区"
+        android:summary="  "
+        android:defaultValue="0"
+        android:dialogTitle="请选择您所在的校区"
+        android:entries="@array/campus_list_preference"
+        android:entryValues="@array/campusvalue_list_preference"
+        android:layout="@layout/custom_pref"
+    />
+    <ListPreference
+        android:key="ListPreference"
+        android:title="每次显示的问题数量"
+        android:summary="  "
+        android:defaultValue="20"
+        android:dialogTitle="请选择需要显示的问题数量"
+        android:entries="@array/entries_list_preference"
+        android:entryValues="@array/entriesvalue_list_preference"
+        android:layout="@layout/custom_pref"
+    />
+
+<ListPreference
+        android:key="news_num_ListPreference"
+        android:title="每次显示的新鲜事数量"
+        android:summary="  "
+        android:defaultValue="20"
+        android:dialogTitle="请选择需要显示的新鲜事数量"
+        android:entries="@array/entries_list_preference"
+        android:entryValues="@array/entriesvalue_list_preference"
+        android:layout="@layout/custom_pref"
+    />
+    </PreferenceCategory>
+     <PreferenceCategory android:title="高级设置">
+        <CheckBoxPreference
+            android:key="push_news_comments"
+            android:title="推送新鲜事评论"
+            android:summaryOn="接收"
+            android:summaryOff="拒绝"
+            android:defaultValue="true"
+           android:layout="@layout/custom_pref"/>
+            
+        
+         <CheckBoxPreference
+            android:key="push_realtime_question"
+            android:title="推送实时问题"
+            android:summaryOn="接收"
+            android:summaryOff="拒绝"
+            android:defaultValue="true"
+            android:layout="@layout/custom_pref"
+        />
+          <CheckBoxPreference
+            android:key="push_orient_question"
+            android:title="推送周边提问"
+            android:summaryOn="接收"
+            android:summaryOff="拒绝"
+            android:defaultValue="true"
+            android:layout="@layout/custom_pref"
+        />
+        <CheckBoxPreference
+            android:key="hdpi"
+            android:title="选择高分辨率图片"
+            android:summaryOn="高分辨率图片"
+            android:summaryOff="低分辨率图片"
+            android:defaultValue="true"
+            android:layout="@layout/custom_pref"
+        /> 
+
+    <PreferenceScreen android:key="offlineMap" android:title="离线地图下载"  
+    android:summary="下载北京市的离线地图包"
+    android:layout="@layout/custom_pref">
+    <intent android:action="com.example.beihangQA_test.OfflineMapActivity"   
+        android:targetPackage="com.example.beihangQA_test" android:targetClass="com.example.beihangQA_test.OfflineMapActivity" />  
+
+</PreferenceScreen>
+
+<!--
+<PreferenceScreen android:key="update" android:title="检查更新"  
+    android:summary="">
+    <intent android:action="com.example.beihangQA_test.UpdateActivity"   
+        android:targetPackage="com.example.beihangQA_test" android:targetClass="com.example.beihangQA_test.UpdateActivity" />  
+
+</PreferenceScreen>
+  -->
+    </PreferenceCategory>
+
+
+</PreferenceScreen>

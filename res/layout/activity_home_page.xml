@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <RelativeLayout 
+        android:id="@+id/homepage_name_layout"
+        android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:background="@drawable/home_header"
+	    android:padding="40dp"
+        >
+	    <TextView
+	     	android:id="@+id/homepage_nickname"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"                
+	        android:gravity="center"
+	        android:text="name"
+	        android:textSize="30dp"	        
+	        android:textColor="#ffffff"
+	         />
+	</RelativeLayout>
+	<RelativeLayout 
+	    android:layout_below="@+id/homepage_name_layout"
+	    android:layout_width="match_parent"
+       	android:layout_height="wrap_content" 
+       	android:paddingLeft="16dp"
+       	android:paddingRight="16dp"
+       	android:paddingTop="16dp"
+       	> 
+        	
+        <TextView
+            android:id="@+id/homepage_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="用户类型："
+            android:textSize="20dp" />
+            
+        <TextView
+            android:id="@+id/homepage_credit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/homepage_group"
+            android:text="积分："
+            android:layout_marginTop="10dp"
+            android:textSize="20dp" 
+            />       
+
+        <TextView
+            android:id="@+id/homepage_department"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/homepage_credit"
+            android:text="院系："
+            android:layout_marginTop="10dp"
+            android:textSize="20dp" />   
+
+        <TextView
+            android:id="@+id/homepage_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/homepage_department"
+            android:text="邮箱："
+            android:layout_marginTop="10dp"
+            android:textSize="20dp" />
+        
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/homepage_email"
+            android:layout_marginTop="16dp"
+            android:gravity="center"             
+            >
+            
+            <LinearLayout 
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:orientation="vertical" 
+	            android:gravity="center">
+            	
+	            <Button 
+	                android:id="@+id/homepage_question_btn"
+	                android:layout_width="40dp"
+	            	android:layout_height="40dp"
+	            	android:background="@drawable/question"
+	            	/>
+	            <TextView 
+	                android:layout_width="wrap_content"
+	            	android:layout_height="wrap_content"
+	            	android:text="我的问题"/>
+	            
+        	</LinearLayout>
+        	  <LinearLayout 
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:orientation="vertical" 
+	            android:gravity="center" 
+	            android:layout_marginLeft="15dp"                    
+            	>
+            	
+	            <Button 
+	                android:id="@+id/homepage_answer_btn"
+	                android:layout_width="40dp"
+	            	android:layout_height="40dp"
+	            	android:background="@drawable/answer"
+	            	/>
+	            <TextView 
+	                android:layout_width="wrap_content"
+	            	android:layout_height="wrap_content"
+	            	android:text="我的回答"/>
+	            
+        	</LinearLayout>
+            <LinearLayout 
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:orientation="vertical" 
+	            android:gravity="center" 
+	            android:layout_marginLeft="15dp"                   
+            	>
+            	
+	            <Button 
+	                android:id="@+id/homepage_news_btn"
+	                android:layout_width="40dp"
+	            	android:layout_height="40dp"
+	            	android:background="@drawable/news"
+	            	/>
+	            <TextView 
+	                android:layout_width="wrap_content"
+	            	android:layout_height="wrap_content"
+	            	android:text="我的新鲜事"/>
+	            
+        	</LinearLayout> 
+        	
+            <LinearLayout 
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:orientation="vertical" 
+	            android:gravity="center" 
+	            android:layout_marginLeft="15dp"                    
+            	>
+            	
+	            <Button 
+	                android:id="@+id/homepage_comment_btn"
+	                android:layout_width="40dp"
+	            	android:layout_height="40dp"
+	            	android:background="@drawable/comment"
+	            	/>
+	            <TextView 
+	                android:layout_width="wrap_content"
+	            	android:layout_height="wrap_content"
+	            	android:text="我的评论"/>
+	            
+        	</LinearLayout>             
+           
+        </LinearLayout>
+    </RelativeLayout>
+    
+    <Button
+        android:id="@+id/homepage_editinfo"
+        android:layout_width="match_parent"
+		android:layout_height="wrap_content"			        
+		android:layout_marginLeft="16dp"
+		android:layout_marginRight="16dp"
+		android:layout_marginBottom="10dp"
+		android:paddingTop="10dp"
+		android:paddingBottom="10dp"
+		android:text="编辑"
+		android:layout_alignParentBottom="true"
+		android:background="@drawable/button_bg"
+		android:textSize="20dp" />
+
+</RelativeLayout>

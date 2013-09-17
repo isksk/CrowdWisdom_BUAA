@@ -1,0 +1,154 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+     >
+      
+     <TextView
+        android:id="@+id/answerTitle"
+        android:layout_width="fill_parent"
+	    android:layout_height="55dp"
+	    android:background="#0078d8"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:textSize="25sp" />
+    
+<RelativeLayout
+        android:layout_below="@+id/answer_show_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"        
+        android:paddingBottom="16dp"
+        >
+        
+	    <TableLayout
+	        android:id="@+id/myanswer_show_tableLayout"
+	        android:layout_width="match_parent"
+	        android:layout_height="45dp"
+	        android:paddingLeft="16dp"
+       	 	android:paddingRight="16dp"
+	        android:layout_alignParentBottom="true"
+	        android:layout_alignParentLeft="true" >
+	
+	        <TableRow>	
+	             <EditText
+                android:id="@+id/answerText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"                
+                android:layout_below="@+id/questionInfoComment"
+                android:layout_marginTop="5sp"
+                android:background="@drawable/input_border"
+                android:gravity="top|left"
+                android:layout_weight="4"
+                android:padding="5sp"
+                android:layout_marginRight="5dp"
+                android:singleLine="false"/>
+            
+            <Button
+		        android:id="@+id/submitButton"
+		        android:layout_width="0dp"
+		        android:layout_height="40sp"
+		        android:layout_below="@id/answerText"
+		        android:layout_weight="1"
+		        android:layout_marginTop="5sp"
+		        android:layout_alignParentRight="true"
+		        android:textColor="#ffffff"
+		        android:background="@drawable/pri_button"
+		        android:text="提交" />
+		        
+	
+		       
+	        </TableRow>
+	    </TableLayout>
+	    
+    
+    <ScrollView
+        android:id="@+id/login_form"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/answerTitle"
+        android:layout_above="@+id/myanswer_show_tableLayout" >
+       <LinearLayout
+	            android:id="@+id/myanswerlist_scrolllayout"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:orientation="vertical" 
+	            android:paddingLeft="16dp"
+       			android:paddingRight="16dp">
+            <TextView
+                android:id="@+id/questionInfoTitle"
+                android:layout_width="fill_parent"
+                android:layout_height="5sp"
+                android:singleLine="false"                 
+                android:layout_marginTop="2sp"/>
+            <TextView
+                android:id="@+id/questionInfoAppend"
+                android:layout_below="@+id/questionInfoTitle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="false"
+                android:textSize="15sp"
+                android:layout_marginTop="15sp"/>
+            
+            <TextView
+                android:id="@+id/questionInfoContent"
+                android:layout_below="@+id/questionInfoAppend"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="false"
+                android:textSize="20sp"
+                android:background="@drawable/border"
+                android:padding="5sp"
+                android:layout_marginTop="15sp"/>
+            <RelativeLayout 
+                android:id="@+id/questionInfoImage"
+                android:layout_below="@+id/questionInfoContent"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                >
+                <ImageView 
+                android:id="@+id/questionInfoImageOne"                
+                android:layout_width="10sp"               
+                android:layout_height="wrap_content"
+                />
+                <ImageView 
+                android:id="@+id/questionInfoImageTwo"  
+                android:layout_toRightOf="@+id/questionInfoImageOne"             
+                android:layout_width="10sp"                
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10sp"
+                />
+                <ImageView 
+                android:id="@+id/questionInfoImageThr" 
+                android:layout_toRightOf="@+id/questionInfoImageTwo"                  
+                android:layout_width="10sp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10sp"
+                />
+            </RelativeLayout>
+            
+            
+            
+            
+            <TextView
+                android:id="@+id/questionCommentLabel"
+                android:layout_below="@+id/questionInfoImage"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:layout_marginTop="10sp"
+                android:text="回答："/>
+              <ListView
+	                android:id="@+id/myanswerlist"
+	                android:layout_marginTop="16dp"
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content"
+	                android:dividerHeight="0px"
+	                
+	                 />
+
+           
+        </LinearLayout>
+    </ScrollView>
+	</RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,78 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".AQActivity" >
+
+    <RelativeLayout
+        android:id="@+id/aq_header"
+		android:layout_width="fill_parent" 
+		android:layout_height="55dp"
+		android:background="#0078d8"
+		> 
+		<TextView       
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:gravity="center"
+		    android:layout_centerVertical="true"
+		    android:text="帮帮忙"
+		    android:textColor="#ffffff"
+		    android:textSize="25sp" 
+		    android:padding="5dp"/>	    
+    </RelativeLayout>
+    
+    <LinearLayout
+        android:id="@+id/wrapedButtons"        
+	    android:layout_height="wrap_content"
+	    android:layout_width="wrap_content"
+	    android:layout_alignParentBottom="true"
+	    android:layout_alignParentRight="true"	    
+	    android:orientation="horizontal"
+	    >
+		
+        <Button 
+	        android:id="@+id/wrapButton"
+	        android:layout_width="40dp"
+	        android:layout_height="40dp"
+	        android:layout_gravity="center_vertical"
+	        android:background="@drawable/wrap_button_release"
+	        android:layout_marginRight="10dp"
+	        />
+        
+		<LinearLayout 
+		    android:id="@+id/buttonsGroup"
+		    android:layout_height="wrap_content"
+		    android:layout_width="wrap_content"
+		    android:orientation="vertical"		    
+		    android:visibility="invisible"
+		    >	    
+	        <Button
+	            android:id="@+id/questionButton"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:background="@drawable/button_bg"
+	            android:padding="10dp"
+	            android:text="我要提问" />
+	
+	        <Button
+	            android:id="@+id/aq_online_user"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:background="@drawable/button_bg"
+	            android:padding="10dp"
+	            android:text="咨询路人" />
+	    </LinearLayout>   
+	
+		 
+	</LinearLayout>
+	
+    <com.example.zb.utl.QuesListView
+        android:id="@+id/mainList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/aq_header"        
+        />
+   	 
+
+</RelativeLayout>

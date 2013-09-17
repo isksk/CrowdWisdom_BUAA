@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="fill_parent"
+    android:orientation="vertical"
+    >
+   
+<!--  
+    <Button
+        android:id="@+id/btn_title_back"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:background="@drawable/mm_title_btn_back"
+        android:focusable="true"
+        android:gravity="center"
+        android:minWidth="70.0dip"
+        android:text="@string/exit"
+        android:textColor="@color/btn_text_title" />
+--> 
+
+	<RelativeLayout
+	    android:layout_width="fill_parent" 
+	    android:layout_height="55dp"
+	    android:background="#0078d8"
+	    >
+ 
+	    <TextView
+	        android:id="@+id/tv_headerTitle"        
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:gravity="center"
+	        android:layout_centerVertical="true"
+	        android:text="@string/title"
+	        android:textColor="#ffffff"
+	        android:textSize="25sp" 
+	        android:padding="5dp"/>
+	
+	    <ImageButton
+	        android:id="@+id/btn_title_popmenu"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerVertical="true"
+	        android:background="@drawable/mm_title_btn_right"
+	        android:contentDescription="@string/image"
+	        android:layout_alignParentRight="true"
+	        android:minWidth="60.0dip"
+	        android:src="@drawable/popmenu_btn_icon"
+	        android:clickable="true"
+	        android:visibility="invisible" />
+    </RelativeLayout>
+
+</LinearLayout>

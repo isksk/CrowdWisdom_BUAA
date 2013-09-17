@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/chatMsgTo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/msg_to_bg"
+            android:padding="10sp"
+            android:layout_alignParentRight="true"
+            android:clickable="true"
+            android:focusable="true"
+            android:textStyle="bold"           
+            android:textColor="#000000" 
+            android:layout_marginTop="15sp"/>
+    </RelativeLayout>
+
+</LinearLayout>

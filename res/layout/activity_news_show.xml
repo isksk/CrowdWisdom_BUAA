@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+	<TextView
+        android:id="@+id/news_show_title"
+        android:layout_width="fill_parent"
+	    android:layout_height="55dp"
+	    android:background="#0078d8"
+        android:gravity="center"
+        android:text=""
+        android:layout_marginBottom="10sp"
+        android:textColor="#ffffff"
+        android:textSize="20sp" />
+	
+    <RelativeLayout
+        android:layout_below="@+id/news_show_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"        
+        android:paddingBottom="16dp"
+        >
+        
+	    <TableLayout
+	        android:id="@+id/show_tableLayout"
+	        android:layout_width="match_parent"
+	        android:layout_height="45dp"
+	        android:paddingLeft="16dp"
+       	 	android:paddingRight="16dp"
+	        android:layout_alignParentBottom="true"
+	        android:layout_alignParentLeft="true" >
+	
+	        <TableRow>	
+	            <EditText
+	                android:id="@+id/news_show_con"
+	                android:layout_width="0dp"
+	                android:layout_height="match_parent"
+	                android:layout_weight="4"
+	                android:hint="说点什么吧～"
+	                android:padding="5dp"
+	                android:layout_marginRight="5dp"
+	                android:background="@drawable/input_border"/>
+	
+	            <Button
+	                android:id="@+id/publish_con"
+	                android:layout_width="0dp"
+	                android:layout_height="match_parent"
+	                android:layout_weight="1"
+	                android:text="发送" 
+	                android:background="@drawable/button_bg"
+	                />
+	        </TableRow>
+	    </TableLayout>
+	
+	    <ScrollView	        
+	        android:id="@+id/vsv"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_above="@id/show_tableLayout"
+	        android:layout_alignParentLeft="true"
+	        android:layout_alignParentTop="true" >
+	
+	        <LinearLayout
+	            android:id="@+id/scrolllayout"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:orientation="vertical" 
+	            android:paddingLeft="16dp"
+       			android:paddingRight="16dp">
+	 
+	            <TextView
+	                android:id="@+id/date"
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content"
+	                android:layout_marginTop="5sp"
+	                android:textSize="20dp" />
+	
+	            <View
+	                android:layout_width="fill_parent"
+	                android:layout_height="4px"
+	                android:background="?android:attr/listDivider" />
+	
+	            <HorizontalScrollView
+	                android:id="@+id/top_scrollview"
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content"
+	                android:layout_marginTop="16dp"
+	                android:scrollbars="none" >
+	
+	                <LinearLayout
+	                    android:id="@+id/image"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:layout_gravity="center"
+	                    android:orientation="horizontal" >
+	                </LinearLayout>
+	            </HorizontalScrollView>
+	
+	            <TextView
+	                android:id="@+id/content"
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content"
+	                android:textSize="15dp"
+	                android:layout_marginTop="16dp"
+	                android:background="@drawable/border" 
+	                android:padding="8sp"/>	
+	            <TextView
+	                android:id="@+id/newsShowCommentTitle"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:textSize="15dp"
+	                android:text="评论："
+	                android:layout_marginTop="16dp"/>
+	
+	            <ListView
+	                android:id="@+id/mylist"
+	                android:layout_marginTop="16dp"
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content"
+	                android:dividerHeight="0px"
+	                 />
+	        </LinearLayout>
+	    </ScrollView>
+	</RelativeLayout>
+</RelativeLayout>

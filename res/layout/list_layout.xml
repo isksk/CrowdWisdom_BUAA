@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    >
+    
+    <RelativeLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10sp"
+	    android:layout_marginTop="2sp"
+    	android:layout_marginRight="10sp">
+    	
+        <TextView android:id="@+id/listTag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#0000ff"
+            
+            android:layout_alignBottom="@+id/listTitle"
+            android:textSize="18sp" />
+ 
+        <TextView android:id="@+id/listTitle"
+            android:layout_marginLeft="5sp"
+            android:layout_toRightOf="@+id/listTag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+        
+        <TextView android:id="@+id/listCredit"
+            android:layout_marginLeft="5sp"
+            
+            android:layout_alignBottom="@+id/listTitle"
+            android:layout_toRightOf="@+id/listTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ff0000"
+            android:textSize="18sp" />
+        
+        <TextView android:id="@+id/listInfo"
+            android:layout_below="@+id/listTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="13sp" />
+ 
+    </RelativeLayout>
+ 
+    
+
+</LinearLayout>

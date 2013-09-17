@@ -1,0 +1,217 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+ 
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+
+    tools:context=".QuestionActivity" >
+
+     <TextView
+        android:id="@+id/questionTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="55dp"
+	    android:background="#0078d8"      
+        android:gravity="center"
+        android:text="提问"
+        android:textColor="#ffffff"
+        android:textSize="25sp" />
+     <ScrollView 
+         android:layout_width="match_parent"
+    	 android:layout_height="match_parent"
+    	 android:layout_below="@+id/questionTitle"
+    	 android:paddingBottom="16dp">
+    	 
+	     <RelativeLayout
+	         android:layout_width="match_parent"
+	    	 android:layout_height="match_parent"
+	          >
+	
+		     <EditText
+		         android:id="@+id/quesTextTitle"
+		         android:layout_width="fill_parent"
+		         android:layout_height="wrap_content"
+		         android:layout_below="@+id/TVquestionTitle"
+		         android:layout_marginLeft="16dp"
+		         android:layout_marginRight="16dp"
+		         android:layout_marginTop="10sp"
+		         android:background="@drawable/input_border"
+				 android:padding="5sp"
+		         android:singleLine="false"
+		          >
+		
+		         <requestFocus />
+		     </EditText>
+		     
+		     <TextView
+			     android:id="@+id/TVquestionText"
+			     android:layout_width="wrap_content"
+			     android:layout_height="wrap_content"
+			     android:layout_alignParentLeft="true"
+			     android:layout_below="@+id/quesTextTitle"
+			     android:layout_marginTop="10dp"
+			     android:layout_marginLeft="16dp"
+			     android:text="问题描述:"
+			     android:textSize="20sp" />
+		     
+			 <EditText
+		         android:id="@+id/questionText"
+		         android:layout_width="fill_parent"
+		         android:layout_height="wrap_content"
+		         android:layout_below="@+id/TVquestionText"
+		         android:layout_marginTop="20sp"
+		         android:layout_marginBottom="16dp"
+		         android:background="@drawable/input_border"
+		         android:gravity="top|left"
+		         android:minLines="7"
+		         android:padding="5sp"
+		         android:layout_marginLeft="16dp"
+		         android:layout_marginRight="16dp"
+		         android:singleLine="false" />
+		
+			 
+			 <Button
+			     android:id="@+id/quesSubmit"
+			     android:layout_width="90sp"
+			     android:layout_height="40sp"
+			     android:layout_below="@+id/photoDel"
+			     android:layout_alignParentRight="true"
+			     android:layout_marginRight="20sp"
+			     android:textColor="#ffffff"
+				 android:background="@drawable/pri_button"
+			     android:text="提交" />
+			 
+			 <Button
+			     android:id="@+id/addPhotoButton"
+			     android:layout_width="45dp"
+			     android:layout_height="40dp"
+			     android:layout_marginRight="30dp"
+			     android:layout_alignTop="@+id/quesSubmit"
+			     android:layout_toLeftOf="@+id/quesSubmit"
+			     android:background="@drawable/camera"
+			     android:textColor="#ffffff"
+			      />
+		
+			 <CheckBox
+			     android:id="@+id/quesCheckBox"
+			     android:layout_width="wrap_content"
+			     android:layout_height="wrap_content"
+			     android:layout_alignBottom="@+id/quesSubmit"
+			     android:layout_alignTop="@+id/quesSubmit"
+			     android:layout_marginLeft="10dp"
+			     android:autoText="false"
+			     android:text="实时问题"
+			     android:textSize="18sp" />
+			 
+			 <TextView
+			     android:id="@+id/TVquestionTitle"
+			     android:layout_width="wrap_content"
+			     android:layout_height="wrap_content"
+			     android:layout_alignParentLeft="true"
+			     android:layout_below="@+id/questionTitle"
+			     android:layout_marginTop="10dp"
+			     android:layout_marginLeft="16dp"
+			     android:text="标题:"
+			     android:textSize="20sp" />
+			 
+		
+		
+			 <RelativeLayout
+			     android:layout_height="wrap_content"
+			     android:layout_width="fill_parent"
+			     android:layout_marginBottom="16dp"
+			     android:id="@+id/photoDel" 
+			     android:layout_below="@+id/property"
+			     >
+		         
+		         
+				 <Button	
+				     android:id="@+id/photoDelone"
+				     android:layout_width="100sp"
+				     android:layout_marginLeft="16dp"
+				     android:layout_height="25sp"
+				     android:layout_alignParentLeft="true"
+				     android:background="#00ffff00"
+					 />
+				 
+				 <Button
+				     android:id="@+id/photoDeltwo"
+				     android:layout_width="100sp"
+				     android:layout_height="25sp"
+				     android:layout_centerHorizontal="true"
+				     android:background="#00ffff00"
+					 />
+				 
+				 <Button
+				     android:id="@+id/photoDelthr"
+				     android:layout_width="100sp"
+				     android:layout_height="25sp"
+				     android:layout_marginRight="16dp"
+				     android:background="#00ffff00"
+				     android:layout_alignParentRight="true"
+					 />
+			 </RelativeLayout>
+			 
+			 <RelativeLayout
+			     android:layout_height="wrap_content"
+			     android:layout_width="fill_parent"
+			     android:layout_marginBottom="16dp"
+			     android:id="@+id/property" 
+			     android:layout_below="@+id/questionText"
+			     >
+				 
+			     <TextView
+			         android:id="@+id/creditTitle"
+				     android:layout_width="wrap_content"
+				     android:layout_height="wrap_content"
+				     android:layout_marginLeft="16dp"
+				     android:text="悬赏:"
+				     android:textSize="20sp" />
+			     <EditText
+				     android:id="@+id/creditText"
+				     android:layout_width="50sp"
+				     android:layout_height="25sp"
+				     android:layout_toRightOf="@+id/creditTitle"
+				     android:layout_marginLeft="10sp"
+				     android:background="@drawable/input_border"
+				     android:maxLength="4"
+				     android:inputType="numberDecimal"
+				     android:gravity="center_horizontal"
+				     android:text="10"
+				      />
+			     <TextView
+				     android:id="@+id/remainCredit"
+				     android:layout_width="wrap_content"
+				     android:layout_height="wrap_content"
+				     android:layout_alignBottom="@+id/creditText"
+				     android:layout_marginLeft="10sp"
+				     android:layout_toRightOf="@+id/creditText"
+				     android:textSize="10sp"
+				     android:text="还剩1200" />
+			     
+			     <TextView
+				     android:id="@+id/typeLabel"
+				     android:layout_width="wrap_content"
+				     android:layout_height="wrap_content"
+				     android:layout_alignBottom="@+id/creditText"
+				     android:layout_marginRight="10sp"
+				     android:layout_toLeftOf="@+id/typeSpinner"
+				     android:textSize="20sp"
+				     android:text="类型:" />
+			     
+			     <Spinner android:id="@+id/typeSpinner" 
+				     android:layout_width="65sp" 
+				     android:layout_height="25sp"
+				     android:layout_alignParentRight="true"
+				     android:layout_marginRight="16dp"
+					 android:background="@drawable/input_border"
+					 android:gravity="center_horizontal"
+				    
+				      /> 
+		
+			     
+			 </RelativeLayout>
+		 </RelativeLayout>
+	</ScrollView>
+</RelativeLayout>
