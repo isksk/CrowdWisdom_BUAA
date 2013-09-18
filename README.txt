@@ -1,0 +1,1 @@
+This is an app for BUAA student,which is used for asking a question to an unknown student or teacher.
